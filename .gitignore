@@ -1,0 +1,17 @@
+# Local notebook/runtime files
+.DS_Store
+.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+# Original datasets and model weights are not part of this archive
+data/*
+!data/README.md
+*.pt
+*.pth
+*.bin
+*.safetensors
+*.zip

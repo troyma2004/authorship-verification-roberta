@@ -1,0 +1,2 @@
+# Tokenizer vocabularies are generated artifacts, not authored source code.
+models/**/tokenizer.json linguist-generated=true

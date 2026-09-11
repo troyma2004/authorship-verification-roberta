@@ -1,0 +1,62 @@
+{
+  "config": {
+    "solution_category": "C",
+    "model_name": "transformer_cross_encoder",
+    "pretrained_model_name": "roberta-base",
+    "train_path": "train.csv",
+    "dev_path": "dev.csv",
+    "output_dir": "category_c/outputs/transformer_roberta_rawtext_accuracy_20ep",
+    "seed": 13,
+    "max_length": 256,
+    "batch_size": 8,
+    "epochs": 20,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "gradient_accumulation_steps": 4,
+    "max_grad_norm": 1.0,
+    "early_stopping_patience": 3,
+    "selection_metric": "accuracy",
+    "fp16": true,
+    "num_workers": 0,
+    "train_swap_augmentation": true,
+    "symmetric_inference": true,
+    "use_fast_tokenizer": true,
+    "tokenizer_name": "whitespace",
+    "lowercase": false,
+    "normalize_urls": false,
+    "normalize_emails": false,
+    "normalize_numbers": false
+  },
+  "epoch": 6,
+  "selection_metric": "accuracy",
+  "threshold": 0.2,
+  "threshold_summary": {
+    "accuracy": {
+      "threshold": 0.2,
+      "metrics": {
+        "accuracy": 0.8129484398464876,
+        "precision": 0.8217492517459262,
+        "recall": 0.8085732984293194,
+        "f1": 0.8151080323272308,
+        "tp": 2471,
+        "tn": 2401,
+        "fp": 536,
+        "fn": 585
+      }
+    },
+    "f1": {
+      "threshold": 0.12,
+      "metrics": {
+        "accuracy": 0.8122809944935758,
+        "precision": 0.8107499195365304,
+        "recall": 0.8242801047120419,
+        "f1": 0.8174590296933311,
+        "tp": 2519,
+        "tn": 2349,
+        "fp": 588,
+        "fn": 537
+      }
+    }
+  }
+}
