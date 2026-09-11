@@ -1,0 +1,260 @@
+{
+  "schema_version": 1,
+  "description": "Recovered authorship-verification model inference bundles. Static file integrity verified; models have not been loaded or rerun in the recovery audit.",
+  "archive": {
+    "file": "models.zip",
+    "bytes": 1837010429,
+    "sha256": "b3c651f8c99a29befb56a270e3ce0b464a8adeed53d3d7e2864f5af315a14403"
+  },
+  "validation": {
+    "zip_crc_test": "passed for every file",
+    "archive_members_match_source_sha256": "passed for all 24 files",
+    "model_header_and_tensor_layout": "passed",
+    "runtime_model_load": "not performed",
+    "prediction_reproduction": "not performed"
+  },
+  "models": [
+    {
+      "name": "transformer_roberta_20epochs",
+      "weight_file": "transformer_roberta_20epochs/hf_model/model.safetensors",
+      "weight_bytes": 498612800,
+      "weight_sha256": "d24cf0a33691929e4283d4c5c9de1d33282b9f2dfc7cb4cda259217ccbe0ac3b",
+      "tensor_count": 201,
+      "parameter_count": 124647170,
+      "dtype": "float32",
+      "architecture": {
+        "architectures": [
+          "RobertaForSequenceClassification"
+        ],
+        "hidden_size": 768,
+        "intermediate_size": 3072,
+        "num_hidden_layers": 12,
+        "num_attention_heads": 12,
+        "vocab_size": 50265,
+        "transformers_version": "5.3.0"
+      },
+      "inference_settings": {
+        "epoch": 6,
+        "max_length": 256,
+        "symmetric_inference": true,
+        "threshold": 0.2,
+        "tokenizer_class": "RobertaTokenizer"
+      },
+      "files": [
+        {
+          "path": "transformer_roberta_20epochs/config_resolved.json",
+          "bytes": 810,
+          "sha256": "3e25f7c82c5491315d5d170e2a8071e85b86a6434dee1a9b15ed4f12bbe8dc67"
+        },
+        {
+          "path": "transformer_roberta_20epochs/hf_model/config.json",
+          "bytes": 767,
+          "sha256": "60e72f904d0860008854f2c4ac429ad230d0c1ab5cf0afd84b99cfe3e091fef9"
+        },
+        {
+          "path": "transformer_roberta_20epochs/hf_model/model.safetensors",
+          "bytes": 498612800,
+          "sha256": "d24cf0a33691929e4283d4c5c9de1d33282b9f2dfc7cb4cda259217ccbe0ac3b"
+        },
+        {
+          "path": "transformer_roberta_20epochs/hf_model/tokenizer.json",
+          "bytes": 3558907,
+          "sha256": "4341bad76b2695122e89199d147e0b7f5c341644dc004b3bc4c426e5a8e36a8f"
+        },
+        {
+          "path": "transformer_roberta_20epochs/hf_model/tokenizer_config.json",
+          "bytes": 375,
+          "sha256": "4438dfb312bba52b460829e8a84ff53282ff9f94e495469193ff0c3723a32c0d"
+        },
+        {
+          "path": "transformer_roberta_20epochs/inference_metadata.json",
+          "bytes": 1634,
+          "sha256": "35f2a756a29701d1c57a7f61f9afc66f82cd85669608b73d3b7dd0bdeef50b45"
+        }
+      ]
+    },
+    {
+      "name": "transformer_roberta_hard_negative_precision",
+      "weight_file": "transformer_roberta_hard_negative_precision/hf_model/model.safetensors",
+      "weight_bytes": 498612800,
+      "weight_sha256": "560809e9082e0bf4d774435bb692c8bd0e083f1c0d24b8db1fbf4aeb82016d65",
+      "tensor_count": 201,
+      "parameter_count": 124647170,
+      "dtype": "float32",
+      "architecture": {
+        "architectures": [
+          "RobertaForSequenceClassification"
+        ],
+        "hidden_size": 768,
+        "intermediate_size": 3072,
+        "num_hidden_layers": 12,
+        "num_attention_heads": 12,
+        "vocab_size": 50265,
+        "transformers_version": "5.3.0"
+      },
+      "inference_settings": {
+        "epoch": 3,
+        "max_length": 256,
+        "symmetric_inference": true,
+        "threshold": 0.1,
+        "tokenizer_class": "RobertaTokenizer"
+      },
+      "files": [
+        {
+          "path": "transformer_roberta_hard_negative_precision/config_resolved.json",
+          "bytes": 1121,
+          "sha256": "434771a6173942d46a3d843200e8a2e2ff54b14a1463d98505cf477116833a1b"
+        },
+        {
+          "path": "transformer_roberta_hard_negative_precision/hf_model/config.json",
+          "bytes": 767,
+          "sha256": "60e72f904d0860008854f2c4ac429ad230d0c1ab5cf0afd84b99cfe3e091fef9"
+        },
+        {
+          "path": "transformer_roberta_hard_negative_precision/hf_model/model.safetensors",
+          "bytes": 498612800,
+          "sha256": "560809e9082e0bf4d774435bb692c8bd0e083f1c0d24b8db1fbf4aeb82016d65"
+        },
+        {
+          "path": "transformer_roberta_hard_negative_precision/hf_model/tokenizer.json",
+          "bytes": 3558907,
+          "sha256": "4341bad76b2695122e89199d147e0b7f5c341644dc004b3bc4c426e5a8e36a8f"
+        },
+        {
+          "path": "transformer_roberta_hard_negative_precision/hf_model/tokenizer_config.json",
+          "bytes": 375,
+          "sha256": "4438dfb312bba52b460829e8a84ff53282ff9f94e495469193ff0c3723a32c0d"
+        },
+        {
+          "path": "transformer_roberta_hard_negative_precision/inference_metadata.json",
+          "bytes": 1968,
+          "sha256": "4a2820d967295c22784441f5f99b8f899ce62ee16c8c2f63ffdf429332477eb8"
+        }
+      ]
+    },
+    {
+      "name": "transformer_roberta_long_text",
+      "weight_file": "transformer_roberta_long_text/hf_model/model.safetensors",
+      "weight_bytes": 498612800,
+      "weight_sha256": "f4135b62c3751b96a1184537db2c965c4c316e7d3119f9138c103e53d941c195",
+      "tensor_count": 201,
+      "parameter_count": 124647170,
+      "dtype": "float32",
+      "architecture": {
+        "architectures": [
+          "RobertaForSequenceClassification"
+        ],
+        "hidden_size": 768,
+        "intermediate_size": 3072,
+        "num_hidden_layers": 12,
+        "num_attention_heads": 12,
+        "vocab_size": 50265,
+        "transformers_version": "5.3.0"
+      },
+      "inference_settings": {
+        "epoch": 1,
+        "max_length": 384,
+        "symmetric_inference": true,
+        "threshold": 0.12,
+        "tokenizer_class": "RobertaTokenizer"
+      },
+      "files": [
+        {
+          "path": "transformer_roberta_long_text/config_resolved.json",
+          "bytes": 1185,
+          "sha256": "04eba38bbf022e65fbbb4d1cdf3d72ef0cc94250463f7eaecf73912d67816400"
+        },
+        {
+          "path": "transformer_roberta_long_text/hf_model/config.json",
+          "bytes": 767,
+          "sha256": "60e72f904d0860008854f2c4ac429ad230d0c1ab5cf0afd84b99cfe3e091fef9"
+        },
+        {
+          "path": "transformer_roberta_long_text/hf_model/model.safetensors",
+          "bytes": 498612800,
+          "sha256": "f4135b62c3751b96a1184537db2c965c4c316e7d3119f9138c103e53d941c195"
+        },
+        {
+          "path": "transformer_roberta_long_text/hf_model/tokenizer.json",
+          "bytes": 3558907,
+          "sha256": "2ab1539b06b1d348d70ecef1674829861812132a5a73d8fe4f29a67a78377379"
+        },
+        {
+          "path": "transformer_roberta_long_text/hf_model/tokenizer_config.json",
+          "bytes": 375,
+          "sha256": "4438dfb312bba52b460829e8a84ff53282ff9f94e495469193ff0c3723a32c0d"
+        },
+        {
+          "path": "transformer_roberta_long_text/inference_metadata.json",
+          "bytes": 2040,
+          "sha256": "896cff22c230c493d4db407789780d5f7d5d9619993d9dbdab062215bd854810"
+        }
+      ]
+    },
+    {
+      "name": "transformer_roberta_symmetry",
+      "weight_file": "transformer_roberta_symmetry/hf_model/model.safetensors",
+      "weight_bytes": 498612800,
+      "weight_sha256": "77bf364cb69e0c5a72eae1887aa31f50db84b00ea26a607e8a8dbf7761b2d701",
+      "tensor_count": 201,
+      "parameter_count": 124647170,
+      "dtype": "float32",
+      "architecture": {
+        "architectures": [
+          "RobertaForSequenceClassification"
+        ],
+        "hidden_size": 768,
+        "intermediate_size": 3072,
+        "num_hidden_layers": 12,
+        "num_attention_heads": 12,
+        "vocab_size": 50265,
+        "transformers_version": "5.3.0"
+      },
+      "inference_settings": {
+        "epoch": 3,
+        "max_length": 256,
+        "symmetric_inference": true,
+        "threshold": 0.1,
+        "tokenizer_class": "RobertaTokenizer"
+      },
+      "files": [
+        {
+          "path": "transformer_roberta_symmetry/config_resolved.json",
+          "bytes": 1107,
+          "sha256": "c9358620865a1ff66f0ca8a3379fec4efab91a2de3e4ee6e7b2319ae23a1838e"
+        },
+        {
+          "path": "transformer_roberta_symmetry/hf_model/config.json",
+          "bytes": 767,
+          "sha256": "60e72f904d0860008854f2c4ac429ad230d0c1ab5cf0afd84b99cfe3e091fef9"
+        },
+        {
+          "path": "transformer_roberta_symmetry/hf_model/model.safetensors",
+          "bytes": 498612800,
+          "sha256": "77bf364cb69e0c5a72eae1887aa31f50db84b00ea26a607e8a8dbf7761b2d701"
+        },
+        {
+          "path": "transformer_roberta_symmetry/hf_model/tokenizer.json",
+          "bytes": 3558907,
+          "sha256": "4341bad76b2695122e89199d147e0b7f5c341644dc004b3bc4c426e5a8e36a8f"
+        },
+        {
+          "path": "transformer_roberta_symmetry/hf_model/tokenizer_config.json",
+          "bytes": 375,
+          "sha256": "4438dfb312bba52b460829e8a84ff53282ff9f94e495469193ff0c3723a32c0d"
+        },
+        {
+          "path": "transformer_roberta_symmetry/inference_metadata.json",
+          "bytes": 1958,
+          "sha256": "10d510192e77137cd3fbcd85ea6e13fe6710cbf1f80683edeb93e489b1661944"
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Four model directories are at the archive root; extract into the demo models directory.",
+    "Historical output_dir and init_checkpoint_path settings are preserved as relative paths in config_resolved.json.",
+    "Safetensors use LayerNorm gamma/beta tensor names; runtime loader compatibility has not been tested.",
+    "Recorded development-set metrics and ensemble thresholds have not been independently reproduced by this audit."
+  ]
+}
