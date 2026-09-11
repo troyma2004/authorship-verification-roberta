@@ -6,7 +6,7 @@ Prepared in September 2026 from the Group 35 Solution C coursework artifacts, th
 
 - The submitted training and inference implementations, with archive/recovery notices and dependency setup pinned to the recorded Transformers version.
 - Historical text outputs from the notebooks, including a partial training log and the final development confusion counts.
-- Four sets of saved model/tokenizer configurations and inference metadata, plus a manifest for all four recovered trained checkpoints. The checkpoint bundle has been prepared separately; release upload is pending.
+- Four sets of saved model/tokenizer configurations and inference metadata, plus all four trained checkpoints distributed through the [checkpoint release](https://github.com/troyma2004/authorship-verification-roberta/releases/tag/checkpoints-2026).
 - Two historical binary-prediction CSV files, identified separately in `outputs/README.md`.
 
 Notebook introductions were replaced with archive/recovery notices. Transient Colab widget state, widget display outputs and download HTML/JavaScript were removed for readable static notebook rendering. Both notebooks' install cells now pin Transformers 5.3.0, as recorded in the saved model configs. These are release-preparation changes; model training and ensemble logic remain the coursework implementation. They do not constitute a fresh execution. Documentation was rewritten around the available evidence; outdated PDFs and the old model-download link are omitted.

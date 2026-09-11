@@ -4,7 +4,7 @@
 
 This coursework system predicts whether two English text passages were written by the same author. Xiao Ma implemented the complete Category C solution for the University of Manchester's COMP34812 Natural Language Understanding coursework in 2026, within Group 35: Kanav Gupta, Xiao Ma, and Yangsong Zhou.
 
-The repository preserves the implementation and experiment records. All four trained checkpoints have been recovered locally and packaged for a separate release; the upload is pending. Metadata and tokenizer files are maintained in the repository. This is an academic project; it has not been validated for production use.
+The repository preserves the implementation and experiment records. All four trained checkpoints have been recovered and are available in the [checkpoint release](https://github.com/troyma2004/authorship-verification-roberta/releases/tag/checkpoints-2026), alongside the metadata and tokenizer files maintained in the repository. This is an academic model release; it has not been validated for production use.
 
 ## Architecture
 
